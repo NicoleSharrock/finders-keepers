@@ -5,9 +5,15 @@
   --quatrinary: #e4ddfa;
 }
 
-* {
-  background-color: #55b950;
+.homepage {
+  text-align: center;
+  padding: 50px;
+  background-color: #3f81a2;
   color:#e4ddfa;
+}
+
+h4 {
+  font-style: italic;
 }
 
 body {
@@ -17,6 +23,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #55b950;
+  color:#e4ddfa;
 }
 
 code {
