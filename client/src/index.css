@@ -12,6 +12,18 @@
   color:#e4ddfa;
 }
 
+.nav {
+  text-align: right;
+  background-color: #766b6b;
+  color: #e4ddfa;
+  font-style: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  column-gap: 30px;
+  padding-right: 20px;
+}
+
 h4 {
   font-style: italic;
 }
