@@ -31,3 +31,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title {
+  text-align: center;
+  color: #e4ddfa;
+  background-color: #3f81a2;
+}
+
+li {
+  list-style: none;
+  display: grid;
+  text-align: center;
+}
+
+.b1 {
+  background-color: #e4ddfa;
+  color: #3f81a2;
+}
+
+.b2 {
+  background-color: #e4ddfa;
+  color: #3f81a2;
+}
+
+
