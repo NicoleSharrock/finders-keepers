@@ -10,9 +10,14 @@ import Footer from './components/Footer'
 function App() {
   return (
     <>
+<<<<<<< HEAD
+      < Login />
+      {/* < Home /> */}
+=======
       < Header />
       < Nav />
       {/* < Login /> */}
+>>>>>>> d2f8d1c8049a7aef9cd9aa8aa44f0a1403937b3e
       < Gallery />
       < Footer />
     </>
