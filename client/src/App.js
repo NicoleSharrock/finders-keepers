@@ -7,6 +7,7 @@ import Add from './pages/Add';
 function App() {
   return (
     <>
+      < Login />
       {/* < Home /> */}
       < Gallery />
     </>
