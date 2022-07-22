@@ -5,6 +5,7 @@ import Gallery from './pages/Gallery';
 import Add from './pages/Add';
 import Header from './components/Header'
 import Nav from './components/Nav';
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       < Nav />
       < Login />
       < Gallery />
+      < Footer />
     </>
   );
 }
