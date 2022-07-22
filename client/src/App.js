@@ -5,19 +5,16 @@ import Gallery from './pages/Gallery';
 import Add from './pages/Add';
 import Header from './components/Header'
 import Nav from './components/Nav';
+import Footer from './components/Footer'
 
 function App() {
   return (
     <>
-<<<<<<< HEAD
-      {/* < Home /> */}
-      < Add />
-=======
       < Header />
       < Nav />
       {/* < Login /> */}
       < Gallery />
->>>>>>> d2f8d1c8049a7aef9cd9aa8aa44f0a1403937b3e
+      < Footer />
     </>
   );
 }
