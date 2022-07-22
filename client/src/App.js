@@ -12,7 +12,8 @@ function App() {
     <>
       < Header />
       < Nav />
-      < Add />
+      < Login />
+      < Gallery />
       < Footer />
     </>
   );
