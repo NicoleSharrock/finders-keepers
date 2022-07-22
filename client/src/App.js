@@ -10,9 +10,9 @@ import Footer from './components/Footer'
 function App() {
   return (
     <>
-      < Login />
       < Header />
       < Nav />
+      < Login />
       < Gallery />
       < Footer />
     </>
