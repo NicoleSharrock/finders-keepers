@@ -5,9 +5,27 @@
   --quatrinary: #e4ddfa;
 }
 
-* {
-  background-color: #55b950;
+.homepage {
+  text-align: center;
+  padding: 50px;
+  background-color: #3f81a2;
   color:#e4ddfa;
+}
+
+.nav {
+  text-align: right;
+  background-color: #766b6b;
+  color: #e4ddfa;
+  font-style: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  column-gap: 30px;
+  padding-right: 20px;
+}
+
+h4 {
+  font-style: italic;
 }
 
 body {
@@ -17,6 +35,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #55b950;
+  color:#e4ddfa;
 }
 
 code {
