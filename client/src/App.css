@@ -1,3 +1,73 @@
 #root {
   margin: 5vh;
 }
+
+.app {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #3f81a2;
+  border: 1px solid #3f81a2;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background: #e4ddfa;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  background-color: #766b6b;
+}
+
+.login-form {
+  background-color: #766b6b;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title-signin {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #766b6b;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+  background-color: #766b6b;
+}
+
+form label {
+  background-color: #766b6b;
+}

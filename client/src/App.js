@@ -5,14 +5,16 @@ import Gallery from './pages/Gallery';
 import Add from './pages/Add';
 import Header from './components/Header'
 import Nav from './components/Nav';
+import Footer from './components/Footer'
 
 function App() {
   return (
     <>
+      < Login />
       < Header />
       < Nav />
-      {/* < Login /> */}
       < Gallery />
+      < Footer />
     </>
   );
 }
