@@ -13,6 +13,9 @@ const itemSchema = new Schema(
             required: 'Where is this item?',
             minlength: 1,
             maxlength: 140
+        },
+        username: {
+            type: String
         }
     }
 );
