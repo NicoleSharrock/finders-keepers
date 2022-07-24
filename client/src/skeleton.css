@@ -160,7 +160,9 @@ p {
 a {
   color: #1EAEDB; }
 a:hover {
-  color: #0FA0CE; }
+  color: #0FA0CE; 
+}
+
 
 
 /* Buttons
@@ -379,6 +381,14 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
+  .names a{
+    color: black;
+    margin: 5px;
+  }
+
+  .names a:hover{
+    color: #3f81a2;
+  }
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

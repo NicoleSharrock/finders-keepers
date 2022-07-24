@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-// import "./styles.css";
 
 function App() {
+
     // React States
     const [errorMessages, setErrorMessages] = useState({});
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -11,12 +11,12 @@ function App() {
     // User Login info
     const database = [
         {
-            username: "user1",
-            password: "pass1"
+            username: "",
+            password: ""
         },
         {
-            username: "user2",
-            password: "pass2"
+            username: "",
+            password: ""
         }
     ];
 
@@ -82,7 +82,9 @@ function App() {
                 {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
             </div>
         </div>
+
     );
 }
+
 
 export default App;
