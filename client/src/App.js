@@ -11,9 +11,9 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      {/* <Login /> */}
-      < Header />
       < Nav />
+      <Login />
+      < Header />
       < Add />
       < Footer />
     </>
