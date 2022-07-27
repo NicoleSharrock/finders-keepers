@@ -31,7 +31,6 @@ const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });
-// import { Route, Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -39,7 +38,7 @@ function App() {
       < Nav />
       <Login />
       < Header />
-      <Gallery />
+      < Gallery />
       < Add />
       < Footer />
     </ApolloProvider>
