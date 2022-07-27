@@ -1,0 +1,44 @@
+[
+    {
+        "username" : "test123",
+        "email" : "test123@yahoo.com",
+        "password" : "pass123",
+        "items" : []
+
+    },
+    {
+        "username" : "test234",
+        "email" : "test234@yahoo.com",
+        "password" : "pass234",
+        "items" : []
+
+    },
+    {
+        "username" : "test345",
+        "email" : "test345@yahoo.com",
+        "password" : "pass345",
+        "items" : []
+
+    },
+    {
+        "username" : "test456",
+        "email" : "test456@yahoo.com",
+        "password" : "pass456",
+        "items" : []
+
+    },
+    {
+        "username" : "test567",
+        "email" : "test567@yahoo.com",
+        "password" : "pass567",
+        "items" : []
+
+    },
+    {
+        "username" : "test678",
+        "email" : "test678@yahoo.com",
+        "password" : "pass678",
+        "items" : []
+
+    }
+]

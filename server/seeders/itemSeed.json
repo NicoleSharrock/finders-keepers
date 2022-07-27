@@ -1,0 +1,57 @@
+[
+    {
+        "itemName" : "keys",
+        "itemLocation" : "on top of nightstand",
+        "username" : "test123"
+    },
+    {
+        "itemName" : "car",
+        "itemLocation" : "lot a space 42",
+        "username" : "test123"
+    },
+    {
+        "itemName" : "car",
+        "itemLocation" : "lot c space 9000",
+        "username" : "test234"
+    },
+    {
+        "itemName" : "present",
+        "itemLocation" : "trunk of car",
+        "username" : "test234"
+    },
+    {
+        "itemName" : "purse",
+        "itemLocation" : "kitchen counter",
+        "username" : "test345"
+    },
+    {
+        "itemName" : "wallet",
+        "itemLocation" : "bowl on table",
+        "username" : "test345"
+    },
+    {
+        "itemName" : "keys",
+        "itemLocation" : "bowl on table",
+        "username" : "test345"
+    },
+    {
+        "itemName" : "car",
+        "itemLocation" : "driveway",
+        "username" : "test456"
+    },
+    {
+        "itemName" : "tie of importance",
+        "itemLocation" : "who knows it's been a while",
+        "username" : "test456"
+    },
+    {
+        "itemName" : "my motivation",
+        "itemLocation" : "at the end of the course",
+        "username" : "test567"
+    },
+    {
+        "itemName" : "the holy grail",
+        "itemLocation" : "that's a secret",
+        "username" : "test567"
+    }
+]
