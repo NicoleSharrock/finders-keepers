@@ -1,11 +1,6 @@
-import './App.css';
-// import Home from './pages/Home';
-import Login from './components/Login';
-import Gallery from './pages/Gallery';
-import Add from './pages/Add';
-import Header from './components/Header'
-import Nav from './components/Nav';
-import Footer from './components/Footer';
+import React, {Component} from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, Switch } from 'react-router-dom';
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -13,9 +8,23 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+
+// import Nav from './components/Nav';
+import Footer from './components/Footer';
+import Login from './components/Login';
+// import Header from './components/Header';
+
+import './App.css';
+// import Home from './pages/Home';
+import Gallery from './pages/Gallery';
+import Add from './pages/Add';
+import Signup from './components/SignUp/signup'
+
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
+
 
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('id_token');
@@ -35,14 +44,49 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      < Nav />
-      <Login />
-      < Header />
-      < Gallery />
-      < Add />
-      < Footer />
+      <Router>
+      <div>
+        <div className='homepage'>
+            <h1>Finders Keepers</h1>
+            <h4>Keeping track of what you have forgotten</h4>
+          </div>
+          <nav>
+          <ul className="nav">
+            <li><Link to={'/'} className="nav-link">Login</Link></li>
+            <li><Link to ={'/signup'} className="nav-link">Signup</Link></li>
+            <li><Link to={'/add'} className="nav-link">Add</Link></li>
+            <li><Link to={'/gallery'} className="nav-link"> Gallery </Link></li>
+          </ul>
+          </nav>
+          <hr />
+          <Routes>
+              <Route exact path='/gallery' component={Gallery} />
+              <Route exact path='/signup' component={Signup} />
+              <Route path='/' component={Login } />
+              <Route path='/add' component={Add} />
+          </Routes>
+        </div>
+        <div>
+          <Routes >
+              <Route
+                path="/" 
+                element={<Login />}/>
+              <Route 
+                path="/add" 
+                element={<Add />}/>
+              <Route
+                path="/gallery"
+                element={<Gallery />}/>
+              <Route
+                path="/signup"
+                element={<Signup />}/>
+          </ Routes>
+          <Footer />
+        </div>
+      </Router>
     </ApolloProvider>
   );
 }
+
 
 export default App;

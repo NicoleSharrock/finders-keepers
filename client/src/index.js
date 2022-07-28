@@ -4,17 +4,17 @@ import './index.css';
 import './skeleton.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-
+import reportWebVitals from './reportWebVitals'
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
       <App />
-    </BrowserRouter>
-  </React.StrictMode >,
+  </React.StrictMode>,
   document.getElementById('root')
 );
+
+reportWebVitals();
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
