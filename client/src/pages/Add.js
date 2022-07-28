@@ -44,6 +44,8 @@ const ItemForm = ({ itemId }) => {
     }
   }; 
 
+const Add = () => {
+    // Combine those two to create a mutation function
     return (
         <main>
              <form id="addForm" onSubmit={handleFormSubmit}>
