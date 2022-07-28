@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Switch } from 'react-router-dom';
 
 import {
   ApolloClient,
@@ -11,12 +11,12 @@ import { setContext } from '@apollo/client/link/context';
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
-import Login from './components/Login';
-// import Header from './components/Header';
+import Login from './pages/login';
+import Header from './components/Header';
 
 import './App.css';
 // import Home from './pages/Home';
-// import Gallery from './pages/Gallery';
+import Gallery from './pages/Gallery';
 import Add from './pages/Add';
 
 
@@ -44,8 +44,27 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
+      <div>
+        <div className='homepage'>
+            <h1>Finders Keepers</h1>
+            <h4>Keeping track of what you have forgotten</h4>
+          </div>
+          <nav>
+          <ul className="nav">
+            <li><Link to={'/login'} className="nav-link">Login</Link></li>
+            <li><Link to={'/add'} className="nav-link">Add</Link></li>
+            <li><Link to={'/gallery'} className="nav-link"> Gallery </Link></li>
+          </ul>
+          </nav>
+          <hr />
+          <Routes>
+              <Route exact path='/gallery' component={Gallery} />
+              <Route path='/login' component={Login} />
+              <Route path='/add' component={Add} />
+          </Routes>
+        </div>
         <div>
-          <Nav />
+          <Gallery />
           <Routes >
               <Route
                 path="/" 
@@ -53,6 +72,9 @@ function App() {
               <Route 
                 path="/add" 
                 element={<Add />}/>
+              <Route
+                path="/gallery"
+                element={<Gallery />}/>
           </ Routes>
           <Footer />
         </div>
