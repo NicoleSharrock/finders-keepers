@@ -52,7 +52,7 @@ function App() {
           </div>
           <nav>
           <ul className="nav">
-            <li><Link to={'/'} className="nav-link">Login</Link></li>
+            <li><Link to={'/'} className="nav-link">Login/Logout</Link></li>
             <li><Link to ={'/signup'} className="nav-link">Signup</Link></li>
             <li><Link to={'/add'} className="nav-link">Add</Link></li>
             <li><Link to={'/gallery'} className="nav-link"> Gallery </Link></li>

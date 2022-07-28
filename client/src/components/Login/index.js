@@ -89,7 +89,10 @@ function App() {
                     {renderErrorMessage("pass")}
                 </div>
                 <div className="button-container">
-                    <input type="submit" />
+                    <input type="submit" value="Log In" />
+                </div>
+                <div className="button-container">
+                    <input type="submit" value="Log Out" />
                 </div>
             </form>
         </div>
