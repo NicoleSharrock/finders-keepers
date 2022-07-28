@@ -10,20 +10,14 @@ export const QUERY_THOUGHTS = gql`
   }
 `;
 
-export const QUERY_THOUGHT = gql`
-  query thought($id: ID!) {
-    thought(_id: $id) {
+export const QUERY_ITEM = gql`
+  query items($id: ID!) {
+    item(_id: $id) {
       _id
-      thoughtText
+      itemName
+      itemLocation
       createdAt
       username
-      reactionCount
-      reactions {
-        _id
-        createdAt
-        username
-        reactionBody
-      }
     }
   }
 `;
@@ -49,7 +43,11 @@ export const QUERY_ME = gql`
       _id
       username
       email
+<<<<<<< HEAD
       items {
+=======
+      thoughts {
+>>>>>>> a75a5cbbd7ad0f2517640b93f23c8dcf68bca877
         _id
         itemName
         itemLocation
@@ -64,11 +62,6 @@ export const QUERY_ME_BASIC = gql`
       _id
       username
       email
-      friendCount
-      friends {
-        _id
-        username
-      }
     }
   }
 `;
