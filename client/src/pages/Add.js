@@ -5,7 +5,6 @@ import { ADD_ITEM } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 
 const Add = () => {
-    // combine those two to create a mutation function
     return (
         <main>
              <form id="addForm">
