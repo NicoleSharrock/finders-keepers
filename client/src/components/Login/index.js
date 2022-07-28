@@ -12,7 +12,7 @@ function App() {
     const [errorMessages, setErrorMessages] = useState({});
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const [login, {error}] = useMutation(LOGIN_USER);
+    const [login, { error }] = useMutation(LOGIN_USER);
 
     // User Login info
     const database = [
@@ -31,7 +31,7 @@ function App() {
         pass: "invalid password"
     };
 
-    const handleSubmit = async(event) => {
+    const handleSubmit = async (event) => {
         //Prevent page reload
         event.preventDefault();
 
@@ -49,18 +49,18 @@ function App() {
 
         // Compare user info
         if (!data) {
-        //     if (data.password !== pass.value) {
-        //         // Invalid password
-        //         setErrorMessages({ name: "pass", message: errors.pass });
-        //     } else {
-        //         setIsSubmitted(true);
-        //     }
-        // } else {
+            //     if (data.password !== pass.value) {
+            //         // Invalid password
+            //         setErrorMessages({ name: "pass", message: errors.pass });
+            //     } else {
+            //         setIsSubmitted(true);
+            //     }
+            // } else {
             // Username not found
             setErrorMessages({ name: "uname", message: errors.uname });
             return;
 
-        } 
+        }
 
         console.log(data)
         Auth.login(data.login.token)
@@ -109,42 +109,3 @@ function App() {
 
 export default App;
 
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-
-// import Auth from '../../utils/auth';
-
-// const Header = () => {
-//     const logout = event => {
-//         event.preventDefault();
-//         Auth.logout();
-//     };
-
-//     return (
-//         <header className="bg-secondary mb-4 py-2 flex-row align-center">
-//             <div className="container flex-row justify-space-between-lg justify-center align-center">
-//                 <Link to="/">
-//                     <h1>Finders Keeperes </h1>
-//                 </Link>
-
-//                 <nav className="text-center">
-//                     {Auth.loggedIn() ? (
-//                         <>
-//                             <Link to="/profile">Me</Link>
-//                             <a href="/" onClick={logout}>
-//                                 Logout
-//                             </a>
-//                         </>
-//                     ) : (
-//                         <>
-//                             <Link to="/login">Login</Link>
-//                             <Link to="/signup">Signup</Link>
-//                         </>
-//                     )}
-//                 </nav>
-//             </div>
-//         </header>
-//     );
-// };
-
-// export default Header;
