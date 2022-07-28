@@ -1,3 +1,6 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 :root {
   --primary: #55b950;
   --secondary: #766b6b;
@@ -10,6 +13,7 @@
   padding: 50px;
   background-color: #3f81a2;
   color:#e4ddfa;
+  border-radius: 20px;
 }
 
 .nav {
@@ -22,6 +26,18 @@
   justify-content: flex-end;
   column-gap: 30px;
   padding-right: 20px;
+  border-radius: 20px;
+
+}
+.nav li {
+  font-style: italic;
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #e4ddfa;
+  font-size: 20px;
 }
 
 h4 {
@@ -30,13 +46,12 @@ h4 {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #55b950;
   color:#e4ddfa;
+  border-radius: 20px;
 }
 
 code {
@@ -66,6 +81,11 @@ li {
   color: #3f81a2;
 }
 
+.b1:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
 footer {
   text-align: center;
 }
@@ -73,11 +93,20 @@ footer {
 #addForm {
   background-color: #766b6b;
   text-align: center;
+  border-radius: 20px;
+}
+
+.iname {
+  border-radius: 20px;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  background-color: #3f81a2;
+  color: #e4ddfa;
+  margin: 10px;
+  padding: 10px;
 }
 
 .card:hover {
@@ -95,4 +124,15 @@ footer {
 }
 .signup-container {
   border: 2px sloid red;
+}
+
+footer {
+  background-color: #3f81a2;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+footer p {
+  color: #e4ddfa;
+  font-size: 20px;
 }
