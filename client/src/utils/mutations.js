@@ -31,6 +31,7 @@ mutation AddItem($itemName: String!, $itemLocation: String!) {
     _id
     itemName
     itemLocation
+    username
   }
 }
 `;
