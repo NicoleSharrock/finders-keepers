@@ -9,15 +9,16 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Nav from './components/Nav';
+// import Nav from './components/Nav';
 import Footer from './components/Footer';
-import Login from './pages/login';
-import Header from './components/Header';
+import Login from './components/Login';
+// import Header from './components/Header';
 
 import './App.css';
 // import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Add from './pages/Add';
+import Signup from './pages/signup'
 
 
 const httpLink = createHttpLink({
@@ -51,7 +52,7 @@ function App() {
           </div>
           <nav>
           <ul className="nav">
-            <li><Link to={'/login'} className="nav-link">Login</Link></li>
+            <li><Link to={'/'} className="nav-link">Login/Signup</Link></li>
             <li><Link to={'/add'} className="nav-link">Add</Link></li>
             <li><Link to={'/gallery'} className="nav-link"> Gallery </Link></li>
           </ul>
@@ -59,7 +60,7 @@ function App() {
           <hr />
           <Routes>
               <Route exact path='/gallery' component={Gallery} />
-              <Route path='/login' component={Login} />
+              <Route path='/' component={Login } />
               <Route path='/add' component={Add} />
           </Routes>
         </div>
@@ -68,7 +69,7 @@ function App() {
           <Routes >
               <Route
                 path="/" 
-                element={<Login />}/>
+                element={<Signup />}/>
               <Route 
                 path="/add" 
                 element={<Add />}/>
