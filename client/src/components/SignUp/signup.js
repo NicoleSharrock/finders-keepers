@@ -49,6 +49,15 @@ const Signup = () => {
                         value={formState.username}
                         onChange={handleChange}
                     />
+                    <label>Email </label>
+                    <input
+                        placeholder="Your email"
+                        name="email"
+                        type="email"
+                        id="email"
+                        value={formState.email}
+                        onChange={handleChange}
+                    />
                     {/* </div> */}
                     {/* <div className="signup-container"> */}
                     <label>Password </label>
