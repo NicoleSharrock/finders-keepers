@@ -65,11 +65,10 @@ function App() {
           </Routes>
         </div>
         <div>
-          <Gallery />
           <Routes >
               <Route
                 path="/" 
-                element={<Signup />}/>
+                element={<Login />}/>
               <Route 
                 path="/add" 
                 element={<Add />}/>
