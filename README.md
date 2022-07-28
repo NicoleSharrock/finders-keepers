@@ -5,6 +5,11 @@
 Do you have a tough time remember where you have place your most prized of items? Well look no further! Finders Keepers is here. This app allows a user to input a description and the location of items, placing each item in a viewable gallery. Did you park your car in a hard to remember place? Well log the address to view when you need it! Your logged information could be as complicated as including GPS coordinators or as simples as "stored under the bed". Don't lose an item ever again!
 
 ## Deployed Site
+![Login Page](https://user-images.githubusercontent.com/98136587/181621453-c24da88a-b78e-41a0-8070-dade284484ec.png)
+
+![Add Item Page](https://user-images.githubusercontent.com/98136587/181621518-ce8d2fcd-f480-413d-97d3-15ec19d140a9.png)
+
+![Gallery Page](https://user-images.githubusercontent.com/98136587/181621593-1e556f4f-50f0-4cb9-8e7f-f8f73e0a0c05.png)
 
 
 ## Table of Contents
@@ -23,7 +28,10 @@ This website requires no installation. Use the link to access the site.
 
 ## Usage
 
-
+This website would be best used to remember items that are important. Suggested items:
+*Car parking spots
+*Address to important places
+*Bike parking
 
 ## Contributors
 Nicole Sharrock-Hayes [GitHub](https://github.com/NicoleSharrock) 

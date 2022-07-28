@@ -18,7 +18,6 @@ const Gallery = () => {
 
     return (
         <main>
-
             {
                 userData.items?.length ? 
                 userData.items.map((item) => {
