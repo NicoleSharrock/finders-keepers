@@ -35,14 +35,15 @@ mutation AddItem($itemName: String!, $itemLocation: String!) {
 }
 `;
 
-export const REMOVE_FRIEND = gql`
-  mutation removeFriend($id: ID!) {
-    removeFriend(id: $id) {
+export const REMOVE_ITEM = gql`
+  mutation removeItem($id: ID!) {
+    removeItem(id: $id) {
       _id
       username
-      friends {
+      items {
         _id
-        username
+        itemName
+        itemLocation
       }
     }
   }
