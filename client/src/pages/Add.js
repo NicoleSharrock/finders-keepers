@@ -31,7 +31,6 @@ const ItemForm = ({ itemId }) => {
  // submit form
  const handleFormSubmit = async (event) => {
     event.preventDefault();
-
     try {
       await addItem({
         variables: [{ itemName }, { itemLocation }],
