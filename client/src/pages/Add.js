@@ -7,27 +7,26 @@ const ItemForm = () => {
     const [itemName, setName] = useState('');
     const [itemLocation, setLocation] = useState('');
 
-    const [addItem, { error }] = useMutation(ADD_ITEM);
-    //   , {
-    //     update(cache, { data: { addItem } }) {
-    //         try {
-    //             const { me } = cache.readQuery({ query: QUERY_ME });
-    //             cache.writeQuery({
-    //                 query: QUERY_ME,
-    //                 data: { me: { ...me, items: [ ...me.items, addItem] } },
-    //             });
-    //         } catch (e) {
-    //             console.warn("First item added!")
-    //         }
+    const [addItem, { error }] = useMutation(ADD_ITEM, {
+        update(cache, { data: { addItem } }) {
+            try {
+                const { me } = cache.readQuery({ query: QUERY_ME });
+                cache.writeQuery({
+                    query: QUERY_ME,
+                    data: { me: { ...me, items: [ ...me.items, addItem] } },
+                });
+            } catch (e) {
+                console.warn("First item added!")
+            }
 
-    //         //update thought array cache
-    //         const { items } = cache.readQuery({ query: QUERY_ITEMS });
-    //         cache.writeQuery({
-    //             query: QUERY_ITEMS,
-    //             data: { items: [addItem, ...items] },
-    //         });
-    //     }
-    // })
+            //update thought array cache
+            const { items } = cache.readQuery({ query: QUERY_ITEMS });
+            cache.writeQuery({
+                query: QUERY_ITEMS,
+                data: { items: [addItem, ...items] },
+            });
+        }
+    })
 
     const handleChange1 = event => {
       if (event.target.value.length <= 50) {
@@ -48,7 +47,7 @@ const ItemForm = () => {
 
     try {
       await addItem({
-        variables: { itemName, itemLocation }
+        variables: { itemName: itemName, itemLocation: itemLocation }
       });
 
     } catch (e) {
