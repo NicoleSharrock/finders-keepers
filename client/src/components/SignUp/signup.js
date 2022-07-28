@@ -37,39 +37,40 @@ const Signup = () => {
     };
 
     return (
-                    <div className="form">
-                        <form onSubmit={handleFormSubmit}>
-                            <div className="input-container">
-                            <label>Username </label>
-                                <input
-                                    placeholder="Your username"
-                                    name="username"
-                                    type="username"
-                                    id="username"
-                                    value={formState.username}
-                                    onChange={handleChange}
-                                />
-                            </div>
-                            <div className="input-container">
-                            <label>Password </label>
-                                <input
-                                    placeholder="******"
-                                    name="password"
-                                    type="password"
-                                    id="password"
-                                    value={formState.password}
-                                    onChange={handleChange}
-                                />
-                            </div>
-                            <div className='button-container'>
-                            <button className="btn d-block w-100" type="submit">
-                                Submit
-                            </button>
-                            </div>
-                        </form>
-
-                        {error && <div>Signup failed</div>}
+        <div className="signup-form">
+            <form onSubmit={handleFormSubmit}>
+                <div className="signup-container">
+                    <label>Username </label>
+                    <input
+                        placeholder="Your username"
+                        name="username"
+                        type="username"
+                        id="username"
+                        value={formState.username}
+                        onChange={handleChange}
+                    />
+                    {/* </div> */}
+                    {/* <div className="signup-container"> */}
+                    <label>Password </label>
+                    <input
+                        placeholder="******"
+                        name="password"
+                        type="password"
+                        id="password"
+                        value={formState.password}
+                        onChange={handleChange}
+                    />
+                    {/* </div> */}
+                    <div className='signup-button'>
+                        <button className="su-btn d-block w-100" type="submit">
+                            Submit
+                        </button>
                     </div>
+                </div>
+            </form>
+
+            {error && <div>Signup failed</div>}
+        </div>
     );
 };
 

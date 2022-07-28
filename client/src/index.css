@@ -87,3 +87,12 @@ footer {
 .container {
   padding: 2px 16px;
 }
+
+/*sign up form */
+
+.signup-form {
+  border: 2px sloid red;
+}
+.signup-container {
+  border: 2px sloid red;
+}

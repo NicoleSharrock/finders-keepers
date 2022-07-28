@@ -5,6 +5,7 @@ import { useMutation } from "@apollo/client";
 import Auth from '../../utils/auth';
 
 
+
 function App() {
 
     // React States
@@ -123,7 +124,7 @@ export default App;
 //         <header className="bg-secondary mb-4 py-2 flex-row align-center">
 //             <div className="container flex-row justify-space-between-lg justify-center align-center">
 //                 <Link to="/">
-//                     <h1>Finders Keepers</h1>
+//                     <h1>Finders Keeperes </h1>
 //                 </Link>
 
 //                 <nav className="text-center">
