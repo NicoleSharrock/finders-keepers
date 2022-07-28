@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ADD_ITEM } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 import { QUERY_ITEMS, QUERY_ME } from '../utils/queries';
 
-const ItemForm = () => {
+const ItemForm = ({ itemId }) => {
     const [itemName, setName] = useState('');
     const [itemLocation, setLocation] = useState('');
 
@@ -34,10 +34,11 @@ const ItemForm = () => {
 
     try {
       await addItem({
-        variables: { itemName, itemLocation },
+        variables: [{ itemName }, { itemLocation }],
       });
       // clear form value
-      setText('');
+      setName('');
+      setLocation('');
     } catch (e) {
       console.error(e);
     }
@@ -47,9 +48,9 @@ const ItemForm = () => {
         <main>
              <form id="addForm" onSubmit={handleFormSubmit}>
                 <label for="iname">Item Name:</label>
-                <input type="text" id="iname" name="iname" value={itemName}></input>
+                <textarea placeholder="Enter Item Name" defaultValue={ itemName }></textarea>
                 <label for="location">Location:</label>
-                <input type="text" id="location" name="location" value={itemLocation}></input>
+                <textarea placeholder="Enter Item Location" defaultValue={ itemLocation }></textarea>
                 <br></br>
                 <input type="submit"></input>
              </form>

@@ -17,7 +17,12 @@ const itemSchema = new Schema(
         username: {
             type: String
         }
-    }
+    },
+    {
+        toJSON: {
+          getters: true
+        }
+      }
 );
 
 const Item = model('Item', itemSchema);
