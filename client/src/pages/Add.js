@@ -1,10 +1,10 @@
 import React from 'react';
-// ADD_ITEM mutation
-// useMutation
 import { ADD_ITEM } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 
-const Add = () => {
+const ItemForm = () => {
+    const [itemName, setName] = useState('');
+    const [itemLocation, setLocation] = useState('');
     return (
         <main>
              <form id="addForm">
@@ -19,6 +19,6 @@ const Add = () => {
     )
 }
 
-export default Add;
+export default ItemForm;
 
 
