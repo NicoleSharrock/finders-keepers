@@ -18,7 +18,7 @@ import './App.css';
 // import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Add from './pages/Add';
-import Signup from './pages/signup'
+import Signup from './components/SignUp/signup'
 
 
 const httpLink = createHttpLink({
@@ -52,7 +52,8 @@ function App() {
           </div>
           <nav>
           <ul className="nav">
-            <li><Link to={'/'} className="nav-link">Login/Signup</Link></li>
+            <li><Link to={'/'} className="nav-link">Login</Link></li>
+            <li><Link to ={'/signup'} className="nav-link">Signup</Link></li>
             <li><Link to={'/add'} className="nav-link">Add</Link></li>
             <li><Link to={'/gallery'} className="nav-link"> Gallery </Link></li>
           </ul>
@@ -60,6 +61,7 @@ function App() {
           <hr />
           <Routes>
               <Route exact path='/gallery' component={Gallery} />
+              <Route exact path='/signup' component={Signup} />
               <Route path='/' component={Login } />
               <Route path='/add' component={Add} />
           </Routes>
@@ -75,6 +77,9 @@ function App() {
               <Route
                 path="/gallery"
                 element={<Gallery />}/>
+              <Route
+                path="/signup"
+                element={<Signup />}/>
           </ Routes>
           <Footer />
         </div>
